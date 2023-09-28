@@ -1,0 +1,107 @@
+body {
+    /*Add font here
+    */
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+    /*START C:
+    */
+    display: flex;
+    flex-direction: row;
+    /*GOTO D: set the size of the body based on figma. set the width of the body as 1200px or max-width: changes to scrollbar*/
+    width: 1200px;
+    /*END D: GOTO E:sidebar*/
+    /*END C:*/
+    
+
+}
+
+/** Element Selector - using of tags; example above code
+*   Class selector - . (period)
+*   ID selector - #
+*/
+
+
+/**
+We are using a different font.
+Go to: www.fonts.google.com
+
+Monseratt Regular 400, 700
+
+Copy the link tag and import
+THEN to use the font,. copy the CSS code from google fonts monseratt
+
+**/
+
+p {
+    color: #595959;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+}
+
+/**
+check for the styles of the UL and OL
+You would notice that all the styles for the list items are thesame
+*/
+
+/*START A:
+*/
+h4 {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+}
+/*TEST. Then check FREELANCE
+Freelance is styled differently but it is still in the same line:
+Use an inline selector - span
+classname - work-experience in the div
+GOTO B:
+*/
+
+/*END A:*/
+
+li {
+    color: #595959;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+}
+
+/**
+To change style specifically
+Work Experience
+
+GOTO A:
+*/
+
+/*START B:
+give the span a class name: subtitle
+*/
+
+.work-experience .subtitle{ /*anytime a subtitle comes after a work-experience it will follow this style*/
+    color: #FB6D3A;
+    /*no need to copy the other sytles since it will be inherited from h4
+    
+    QUESTION: since other parts have the same style, how can we reuse our code? classn
+    
+    FLEXBOX for structure: intro ROWS and COLUMNS
+    GOTO C:
+    */
+}
+
+/*END B:*/
+
+/*START F:*/
+.sidebar {
+    width: 370px;
+}
+
+.main-content {
+    width: calc(100% - 370px);
+}
+/*END F:*/
+
